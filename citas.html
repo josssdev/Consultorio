@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Cita - Consultorio Médico Familiar Adulam</title>
+    <meta name="description" content="Agenda tu cita médica en el Consultorio Médico Familiar Adulam">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <button id="menu-toggle" class="menu-toggle">
+                    <span class="menu-icon"></span>
+                </button>
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Consultorio Médico Familiar Adulam</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li class="active"><a href="citas.html">Citas</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu-header">
+            <span>Adulam</span>
+            <button id="close-menu" class="close-menu">&times;</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li class="active"><a href="citas.html">Citas</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Agendar Cita Médica</h1>
+                <p>Agenda tu cita médica de forma rápida y sencilla a través de WhatsApp.</p>
+            </div>
+        </section>
+
+        <section class="citas">
+            <div class="container">
+                <div class="citas-grid">
+                    <div class="cita-form">
+                        <div class="card">
+                            <h2>Solicita tu cita</h2>
+                            <p>Selecciona la especialidad y haz clic en el botón para agendar tu cita por WhatsApp.</p>
+                            
+                            <div class="form-group">
+                                <label for="especialidad">Especialidad (opcional)</label>
+                                <select id="especialidad" class="form-select">
+                                    <option value="">Selecciona una especialidad</option>
+                                    <option value="medicina-general">Medicina General</option>
+                                    <option value="pediatria">Pediatría</option>
+                                    <option value="ginecologia">Ginecología</option>
+                                    <option value="nutricion">Nutrición</option>
+                                    <option value="psicologia">Psicología</option>
+                                </select>
+                            </div>
+                            
+                            <button id="agendar-cita" class="button primary whatsapp-button">
+                                <span class="whatsapp-icon"></span>
+                                Agendar Cita por WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="cita-info">
+                        <div class="cita-image">
+                            <img src="adulam.png" alt="Consultorio Médico">
+                        </div>
+                        
+                        <div class="info-box">
+                            <div class="info-icon calendar-icon"></div>
+                            <div class="info-content">
+                                <h3>Horarios de atención</h3>
+                                <p>Lunes a viernes: 8:00 AM - 7:00 PM</p>
+                                <p>Sábados: 9:00 AM - 2:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-box">
+                            <div class="info-icon message-icon"></div>
+                            <div class="info-content">
+                                <h3>Atención inmediata</h3>
+                                <p>Respondemos tus mensajes en un máximo de 30 minutos durante el horario de atención.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Consultorio Médico Familiar Adulam. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="citas.js"></script>
+</body>
+</html>

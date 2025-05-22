@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultorio Médico Familiar Adulam</title>
+    <meta name="description" content="Aplicación oficial del Consultorio Médico Familiar Adulam">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <button id="menu-toggle" class="menu-toggle">
+                    <span class="menu-icon"></span>
+                </button>
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Consultorio Médico Familiar Adulam</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li class="active"><a href="index.html">Inicio</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="citas.html">Citas</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu-header">
+            <span>Adulam</span>
+            <button id="close-menu" class="close-menu">&times;</button>
+        </div>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">Inicio</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="citas.html">Citas</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Consultorio Médico Familiar Adulam</h1>
+                        <p>Su salud es nuestra prioridad. Acceda a nuestros servicios médicos, noticias y productos desde cualquier lugar.</p>
+                        <div class="hero-buttons">
+                            <a href="citas.html" class="button primary">Agendar Cita</a>
+                            <a href="noticias.html" class="button outline">Ver Noticias</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="adulam.png" alt="Consultorio Médico Familiar Adulam">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon news-icon"><img src="notice.png" alt=""></div>
+                        <h3>Noticias</h3>
+                        <p>Mantente informado sobre nuestras últimas noticias y recomendaciones médicas.</p>
+                        <p>Accede a información sobre campañas de vacunación, cambios de horario y consejos de salud.</p>
+                        <a href="noticias.html" class="button outline">Ver Noticias</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon calendar-icon"><img src="cita.png" alt=""></div>
+                        <h3>Citas Médicas</h3>
+                        <p>Agenda tu cita médica de forma rápida y sencilla a través de WhatsApp.</p>
+                        <p>Con un solo clic podrás solicitar tu cita sin necesidad de llenar formularios complicados.</p>
+                        <a href="citas.html" class="button outline">Agendar Cita</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon shop-icon"><img src="tienda.png" alt=""></div>
+                        <h3>Tienda</h3>
+                        <p>Compra medicamentos y productos de cuidado personal directamente desde nuestra app.</p>
+                        <p>Explora nuestro catálogo de productos organizados por categorías y realiza tu pedido por WhatsApp.</p>
+                        <a href="tienda.html" class="button outline">Ir a la Tienda</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Consultorio Médico Familiar Adulam. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias - Consultorio Médico Familiar Adulam</title>
+    <meta name="description" content="Últimas noticias y anuncios del Consultorio Médico Familiar Adulam">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <button id="menu-toggle" class="menu-toggle">
+                    <span class="menu-icon"></span>
+                </button>
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Consultorio Médico Familiar Adulam</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="active"><a href="noticias.html">Noticias</a></li>
+                    <li><a href="citas.html">Citas</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu-header">
+            <span>Adulam</span>
+            <button id="close-menu" class="close-menu">&times;</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="active"><a href="noticias.html">Noticias</a></li>
+                <li><a href="citas.html">Citas</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Noticias y Anuncios</h1>
+                <p>Mantente informado sobre nuestras últimas noticias, anuncios y recomendaciones médicas.</p>
+            </div>
+        </section>
+
+        <section class="noticias">
+            <div class="container">
+                <div class="noticias-grid" id="noticias-container">
+                    <!-- Las noticias se cargarán dinámicamente con JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Consultorio Médico Familiar Adulam. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="noticias.js"></script>
+</body>
+</html>

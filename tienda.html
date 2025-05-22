@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - Consultorio Médico Familiar Adulam</title>
+    <meta name="description" content="Tienda de medicamentos y productos del Consultorio Médico Familiar Adulam">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <button id="menu-toggle" class="menu-toggle">
+                    <span class="menu-icon"></span>
+                </button>
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Consultorio Médico Familiar Adulam</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="citas.html">Citas</a></li>
+                    <li class="active"><a href="tienda.html">Tienda</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu-header">
+            <span>Adulam</span>
+            <button id="close-menu" class="close-menu">&times;</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="citas.html">Citas</a></li>
+                <li class="active"><a href="tienda.html">Tienda</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Tienda de Medicamentos</h1>
+                <p>Explora nuestro catálogo de productos y realiza tu pedido fácilmente por WhatsApp.</p>
+            </div>
+        </section>
+
+        <section class="tienda">
+            <div class="container">
+                <!-- Pestañas de categorías -->
+                <div class="tabs">
+                    <div class="tab active" data-tab="medicamentos">Medicamentos</div>
+                    <div class="tab" data-tab="cuidado-personal">Cuidado Personal</div>
+                    <div class="tab" data-tab="suplementos">Suplementos</div>
+                    <div class="tab" data-tab="primeros-auxilios">Primeros Auxilios</div>
+                </div>
+                
+                <!-- Contenido de las pestañas 
+                
+                <!-- Medicamentos 
+                <div id="medicamentos" class="tab-content active">
+                    <div class="productos-grid">
+                        <!-- Producto 1 
+                        <div class="producto-card">
+                            <div class="producto-image">
+                                <img src="img/placeholder.jpg" alt="Paracetamol 500mg">
+                            </div>
+                            <div class="producto-content">
+                                <h3 class="producto-title">Paracetamol 500mg</h3>
+                                <p class="producto-description">Analgésico y antipirético. Caja con 20 tabletas.</p>
+                                <p class="producto-price">$85.00</p>
+                                <button class="button primary full-width whatsapp-button" onclick="comprarWhatsApp('Paracetamol 500mg')">
+                                    <span class="whatsapp-icon"></span>
+                                    Comprar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Producto 2 
+                        <div class="producto-card">
+                            <div class="producto-image">
+                                <img src="img/placeholder.jpg" alt="Ibuprofeno 400mg">
+                            </div>
+                            <div class="producto-content">
+                                <h3 class="producto-title">Ibuprofeno 400mg</h3>
+                                <p class="producto-description">Antiinflamatorio no esteroideo. Caja con 30 tabletas.</p>
+                                <p class="producto-price">$95.00</p>
+                                <button class="button primary full-width whatsapp-button" onclick="comprarWhatsApp('Ibuprofeno 400mg')">
+                                    <span class="whatsapp-icon"></span>
+                                    Comprar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Producto 3 
+                        <div class="producto-card">
+                            <div class="producto-image">
+                                <img src="img/placeholder.jpg" alt="Loratadina 10mg">
+                            </div>
+                            <div class="producto-content">
+                                <h3 class="producto-title">Loratadina 10mg</h3>
+                                <p class="producto-description">Antihistamínico. Caja con 10 tabletas.</p>
+                                <p class="producto-price">$120.00</p>
+                                <button class="button primary full-width whatsapp-button" onclick="comprarWhatsApp('Loratadina 10mg')">
+                                    <span class="whatsapp-icon"></span>
+                                    Comprar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cuidado Personal 
+                <div id="cuidado-personal" class="tab-content">
+                    <div class="productos-grid">
+                        <!-- Producto 1 
+                        <div class="producto-card">
+                            <div class="producto-image">
+                                <img src="img/placeholder.jpg" alt="Jabón Antibacterial">
+                            </div>
+                            <div class="producto-content">
+                                <h3 class="producto-title">Jabón Antibacterial</h3>
+                                <p class="producto-description">Jabón líquido antibacterial para manos. 250ml.</p>
+                                <p class="producto-price">$45.00</p>
+                                <button class="button primary full-width whatsapp-button" onclick="comprarWhatsApp('Jabón Antibacterial')">
+                                    <span class="whatsapp-icon"></span>
+                                    Comprar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Producto 2 
+                        <div class="producto-card">
+                            <div class="producto-image">
+                                <img src="img/placeholder.jpg" alt="Crema Hidratante">
+                            </div>
+                            <div class="producto-content">
+                                <h3 class="producto-title">Crema Hidratante</h3>
+                                <p class="producto-description">Crema hidratante para piel seca. 200ml.</p>
+                                <p class="producto-price">$75.00</p>
+                                <button class="button primary full-width whatsapp-button" onclick="comprarWhatsApp('Crema Hidratante')">
+                                    <span class="whatsapp-icon"></span>
+                                    Comprar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Producto 3 
+                        <div class="producto-card">
+                            <div class="producto-image">
+                                <img src="img/placeholder.jpg" alt="Protector Solar FPS 50">
+                            </div>
+                            <div class="producto-content">
+                                <h3 class="producto-title">Protector Solar FPS 50</h3>
+                                <p class="producto-description">Protector solar de amplio espectro. 120ml.</p>
+                                <p class="producto-price">$180.00</p>
+                                <button class="button primary full-width whatsapp-button" onclick="comprarWhatsApp('Protector Solar FPS 50')">
+                                    <span class="whatsapp-icon"></span>
+                                    Comprar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Suplementos 
+                <div id="suplementos" class="tab-content">
+                    <div class="productos-grid">
+                        <!-- Producto 1 
+                        <div class="producto-card">
+                            <div class="producto-image">
+                                <img src="img/placeholder.jpg" alt="Vitamina C">
+                            </div>
+                            <div class="producto-content">
+                                <h3 class="producto-title">Vitamina C</h3>
+                                <p class="producto-description">Suplemento de Vitamina C. Frasco con 60 tabletas.</p>
+                                <p class="producto-price">$150.00</p>
+                                <button class="button primary full-width whatsapp-button" onclick="comprarWhatsApp('Vitamina C')">
+                                    <span class="whatsapp-icon"></span>
+                                    Comprar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Producto 2 
+                        <div class="producto-card">
+                            <div class="producto-image">
+                                <img src="img/placeholder.jpg" alt="Complejo B">
+                            </div>
+                            <div class="producto-content">
+                                <h3 class="producto-title">Complejo B</h3>
+                                <p class="producto-description">Suplemento de Complejo B. Frasco con 30 tabletas.</p>
+                                <p class="producto-price">$130.00</p>
+                                <button class="button primary full-width whatsapp-button" onclick="comprarWhatsApp('Complejo B')">
+                                    <span class="whatsapp-icon"></span>
+                                    Comprar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Producto 3 
+                        <div class="producto-card">
+                            <div class="producto-image">
+                                <img src="img/placeholder.jpg" alt="Omega 3">
+                            </div>
+                            <div class="producto-content">
+                                <h3 class="producto-title">Omega 3</h3>
+                                <p class="producto-description">Suplemento de Omega 3. Frasco con 60 cápsulas.</p>
+                                <p class="producto-price">$220.00</p>
+                                <button class="button primary full-width whatsapp-button" onclick="comprarWhatsApp('Omega 3')">
+                                    <span class="whatsapp-icon"></span>
+                                    Comprar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Primeros Auxilios 
+                <div id="primeros-auxilios" class="tab-content">
+                    <div class="productos-grid">
+                        <!-- Producto 1 
+                        <div class="producto-card">
+                            <div class="producto-image">
+                                <img src="img/placeholder.jpg" alt="Kit de Primeros Auxilios">
+                            </div>
+                            <div class="producto-content">
+                                <h3 class="producto-title">Kit de Primeros Auxilios</h3>
+                                <p class="producto-description">Kit básico de primeros auxilios para el hogar.</p>
+                                <p class="producto-price">$350.00</p>
+                                <button class="button primary full-width whatsapp-button" onclick="comprarWhatsApp('Kit de Primeros Auxilios')">
+                                    <span class="whatsapp-icon"></span>
+                                    Comprar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                        
+                         Producto 2 
+                        <div class="producto-card">
+                            <div class="producto-image">
+                                <img src="img/placeholder.jpg" alt="Vendas Elásticas">
+                            </div>
+                            <div class="producto-content">
+                                <h3 class="producto-title">Vendas Elásticas</h3>
+                                <p class="producto-description">Paquete de 2 vendas elásticas de 10cm x 5m.</p>
+                                <p class="producto-price">$65.00</p>
+                                <button class="button primary full-width whatsapp-button" onclick="comprarWhatsApp('Vendas Elásticas')">
+                                    <span class="whatsapp-icon"></span>
+                                    Comprar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                        
+                         Producto 3 
+                        <div class="producto-card">
+                            <div class="producto-image">
+                                <img src="img/placeholder.jpg" alt="Alcohol Antiséptico">
+                            </div>
+                            <div class="producto-content">
+                                <h3 class="producto-title">Alcohol Antiséptico</h3>
+                                <p class="producto-description">Alcohol antiséptico al 70%. Frasco de 250ml.</p>
+                                <p class="producto-price">$40.00</p>
+                                <button class="button primary full-width whatsapp-button" onclick="comprarWhatsApp('Alcohol Antiséptico')">
+                                    <span class="whatsapp-icon"></span>
+                                    Comprar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Consultorio Médico Familiar Adulam. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Script simple para manejar las pestañas
+        document.addEventListener('DOMContentLoaded', function() {
+            // Obtener todas las pestañas
+            const tabs = document.querySelectorAll('.tab');
+            
+            // Añadir evento de clic a cada pestaña
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // Desactivar todas las pestañas y contenidos
+                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                    
+                    // Activar esta pestaña
+                    this.classList.add('active');
+                    
+                    // Activar el contenido correspondiente
+                    const tabId = this.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+            
+            // Función para comprar por WhatsApp
+            window.comprarWhatsApp = function(producto) {
+                // Número de WhatsApp del consultorio (ejemplo)
+                const numeroWhatsApp = "+593967053999";
+                
+                // Mensaje predefinido
+                const mensaje = `Hola, quiero comprar el siguiente producto: ${producto}`;
+                
+                // Crear enlace de WhatsApp con mensaje predefinido
+                const whatsappLink = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+                
+                // Abrir WhatsApp
+                window.open(whatsappLink, '_blank');
+            };
+        });
+    </script>
+</body>
+</html>
